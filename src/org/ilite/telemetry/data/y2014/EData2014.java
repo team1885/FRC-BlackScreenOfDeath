@@ -11,7 +11,7 @@ import org.ilite.util.gui.builder.IRenderer;
 import org.ilite.util.gui.builder.RenderingVisitorClassName;
 import org.ilite.util.gui.builder.components.JLabelRenderer;
 
-@RenderingVisitorClassName("ilite.util.gui.builder.DefaultVisitor")
+@RenderingVisitorClassName("org.ilite.util.gui.builder.DefaultVisitor")
 public enum EData2014 implements IDisplayBuilderEnum
 {
   DIGIN1_ENC1A(1, DIGITAL_IN, "Encoder 1 Channel A"),
