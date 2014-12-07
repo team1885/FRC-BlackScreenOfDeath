@@ -1,15 +1,15 @@
 package org.ilite.telemetry.data.y2014;
 
-import static ilite.data.models.ETelemetryType.ANALOG_IN;
-import static ilite.data.models.ETelemetryType.DIGITAL_IN;
-import static ilite.data.models.ETelemetryType.PNEUMATIC;
-import static ilite.data.models.ETelemetryType.PWM_OUT;
-import static ilite.data.models.ETelemetryType.RELAY_OUT;
-import ilite.data.models.ETelemetryType;
-import ilite.util.gui.builder.IDisplayBuilderEnum;
-import ilite.util.gui.builder.IRenderer;
-import ilite.util.gui.builder.RenderingVisitorClassName;
-import ilite.util.gui.builder.components.JLabelRenderer;
+import static org.ilite.telemetry.data.ETelemetryType.ANALOG_IN;
+import static org.ilite.telemetry.data.ETelemetryType.DIGITAL_IN;
+import static org.ilite.telemetry.data.ETelemetryType.PNEUMATIC;
+import static org.ilite.telemetry.data.ETelemetryType.PWM_OUT;
+import static org.ilite.telemetry.data.ETelemetryType.RELAY_OUT;
+import org.ilite.telemetry.data.ETelemetryType;
+import org.ilite.util.gui.builder.IDisplayBuilderEnum;
+import org.ilite.util.gui.builder.IRenderer;
+import org.ilite.util.gui.builder.RenderingVisitorClassName;
+import org.ilite.util.gui.builder.components.JLabelRenderer;
 
 @RenderingVisitorClassName("ilite.util.gui.builder.DefaultVisitor")
 public enum EData2014 implements IDisplayBuilderEnum

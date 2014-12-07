@@ -1,6 +1,6 @@
 package org.ilite.telemetry.data;
 
-import ilite.util.lang.ICsvData;
+import org.ilite.util.lang.ICsvData;
 
 import java.util.Arrays;
 

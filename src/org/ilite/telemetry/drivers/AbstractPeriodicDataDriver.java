@@ -1,10 +1,15 @@
 package org.ilite.telemetry.drivers;
 
-import java.sql.Time;
+//Removed this import in favor of org.ilite import -- fromSeconds method supported
+//import java.sql.Time;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
+
+import org.ilite.util.lang.Delegator;
+import org.ilite.util.physics.concepts.Hertz;
+import org.ilite.util.physics.concepts.Time;
 
 public abstract class AbstractPeriodicDataDriver <T> 
 extends Delegator<T> implements IDataDriver<T>
@@ -98,6 +103,6 @@ extends Delegator<T> implements IDataDriver<T>
    */
   public Hertz getDataRate()
   {
-    return Hertz.fromPeriod(Time.fromSeconds((float)mPeriodMs / 1000f));
+    return Hertz.fromPeriod(Time.fromSeconds((float)(mPeriodMs / 1000f)));
   }
 }
